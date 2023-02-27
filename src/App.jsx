@@ -12,6 +12,7 @@ function App() {
         {/* main content */}
         <div className="body">
           <h1>Remove this</h1>
+          <h2>Second remove this</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
             accusantium cumque sunt, animi ipsum mollitia vero nobis optio
