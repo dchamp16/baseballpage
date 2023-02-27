@@ -2,6 +2,11 @@ import React from "react";
 
 const Footer = () => {
   const copyrightDate = new Date();
+  const companyInfo = {
+    companyName: "",
+    companyYear: 0,
+    socialMedia: ["facebook", "tweeter", "gmail", "instagram"],
+  };
 
   return (
     <div>
