@@ -12,14 +12,10 @@
   grid-template-areas:
     "header header header header header"
     "body body body sidebarTop sidebarTop"
-    "body body body sidebarTop sidebarTop"
-    "body body body sidebarTop sidebarTop"
-    "body body body sidebarBottom sidebarBottom"
-    "body body body sidebarBottom sidebarBottom"
     "body body body sidebarBottom sidebarBottom"
     "footer footer footer footer footer";
   width: 100vw;
-  height: 150vh;
+  height: 110vh;
 }
 
 .head {
@@ -27,15 +23,12 @@
 }
 .body {
   grid-area: body;
-  margin-right: auto;
 }
 .sidebar-top {
   grid-area: sidebarTop;
-  /* margin-left: 5em; */
 }
 .sidebar-bottom {
   grid-area: sidebarBottom;
-   /* margin-left: 5em; */
 }
 
 .footer {

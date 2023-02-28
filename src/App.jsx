@@ -1,7 +1,7 @@
-import "./App.css";
+// import "./App.css";
 import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Content from "../components/Content"
+import Content from "../components/Content";
 import TopSideBar from "../components/TopSideBar";
 import BottomSideBar from "../components/BottomSideBar";
 
@@ -10,15 +10,15 @@ function App() {
     <div className="App">
       <div className="grid-container">
         {/* navbar */}
-          <NavBar />
+        <NavBar />
         {/* main content */}
-          <Content/>
+        <Content />
         {/* sidebar top */}
-        <TopSideBar/>
+        <TopSideBar />
         {/* sidebar bottom */}
-        <BottomSideBar/>
+        <BottomSideBar />
         {/* footer */}
-          <Footer />
+        <Footer />
       </div>
     </div>
   );
