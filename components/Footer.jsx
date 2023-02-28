@@ -9,7 +9,7 @@ const Footer = () => {
   };
 
   return (
-    <div>
+    <div  className="footer  container-fluid">
       <footer class="text-center text-lg-start bg-white text-muted">
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           <div class="me-5 d-none d-lg-block">
