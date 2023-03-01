@@ -9,8 +9,8 @@ import BottomSideBar from "../components/BottomSideBar";
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <div className="row">
+      <div className="container-fluid">
+        <div className="row sticky-top head">
           <NavBar />
         </div>
         <div className="row">

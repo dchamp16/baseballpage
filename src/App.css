@@ -1,7 +1,5 @@
 .head {
-  background: url("https://www.youtube.com/embed/rMKljyNAGyo?start=2") no-repeat
-    center center fixed;
-  height: 50em;
+  background-color: white;
 }
 .navbar-nav {
   margin-left: auto;
@@ -10,6 +8,9 @@
 @media screen and (max-width: 600px) {
   .test {
     justify-content: center;
+  }
+  .navbar-nav {
+    margin-left: 3px;
   }
   /* body {
     height: 100%;
