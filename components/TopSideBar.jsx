@@ -1,10 +1,11 @@
 import React from "react";
+import ScoreTable from "./extra-components/Score-table";
 
 const TopSideBar = () => {
   return (
-    <div className="sidebar-top">
+    <div className="col-sm-4 sidebar-top">
       <h3>CHANGE THIS</h3>
-      <p>SCORES</p>
+      <ScoreTable />
     </div>
   );
 };

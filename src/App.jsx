@@ -1,24 +1,27 @@
-// import "./App.css";
+import "./App.css";
 import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Content from "../components/Content";
+import ContentBottom from "../components/ContentBottom";
 import TopSideBar from "../components/TopSideBar";
 import BottomSideBar from "../components/BottomSideBar";
 
 function App() {
   return (
     <div className="App">
-      <div className="grid-container">
-        {/* navbar */}
-        <NavBar />
-        {/* main content */}
-        <Content />
-        {/* sidebar top */}
-        <TopSideBar />
-        {/* sidebar bottom */}
-        <BottomSideBar />
-        {/* footer */}
-        <Footer />
+      <div className="container">
+        <div className="row">
+          <NavBar />
+        </div>
+        <div className="row">
+          <Content />
+          <TopSideBar />
+          <ContentBottom />
+          <BottomSideBar />
+        </div>
+        <div className="row">
+          <Footer />
+        </div>
       </div>
     </div>
   );
