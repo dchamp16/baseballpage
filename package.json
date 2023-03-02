@@ -1,12 +1,9 @@
 {
   "name": "calsummerball-web",
   "version": "0.0.0",
-  "homepage": "https://dchamp16.github.io/baseballpage/",
-  "private": false,
+  "private": true,
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
