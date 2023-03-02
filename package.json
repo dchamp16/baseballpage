@@ -1,6 +1,6 @@
 {
   "name": "calsummerball-web",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "homepage": "https://dchamp16.github.io/baseballpage/",
   "type": "module",
