@@ -1,6 +1,22 @@
 import React from "react";
+import { BrowserRouter, NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  let listName = ["Home", "Features", "Pricing"];
+  let location = ["/", "/Features", "/Pricing"];
+  let li = location.map((value, index) => {
+    return (
+      <NavLink
+        style={({ isActive }) => {
+          return isActive ? { color: "red" } : {};
+        }}
+        key={index}
+        to={value}
+      >
+        {listName[index]}
+      </NavLink>
+    );
+  });
   return (
     <div className="row head">
       <div className="col-sm">
@@ -23,7 +39,12 @@ const Navbar = () => {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
               <ul className="navbar-nav">
-                <li className="nav-item">
+                <BrowserRouter>
+                  <li className="nav-item">
+                    <span className=" nav-link">{li}</span>
+                  </li>
+                </BrowserRouter>
+                {/* <li  className="nav-item">
                   <a className="nav-link active" aria-current="page" href="#">
                     Home
                   </a>
@@ -37,7 +58,9 @@ const Navbar = () => {
                   <a className="nav-link" href="#">
                     Pricing
                   </a>
-                </li>
+                </li> */}
+
+                {/* ------------ */}
                 <li className="nav-item dropdown">
                   <a
                     className="nav-link dropdown-toggle"
