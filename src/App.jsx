@@ -5,6 +5,7 @@ import Content from "../components/Content";
 import ContentBottom from "../components/ContentBottom";
 import TopSideBar from "../components/TopSideBar";
 import BottomSideBar from "../components/BottomSideBar";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
           <NavBar />
         </div>
         <div className="row">
-          <Content />
+          <Routes>
+            <Route path="/" element={<Content />} />
+          </Routes>
           <TopSideBar />
           <ContentBottom />
           <BottomSideBar />
