@@ -10,6 +10,7 @@ const Navbar = () => {
         style={({ isActive }) => {
           return isActive ? { color: "red" } : {};
         }}
+        className="nav-link"
         key={index}
         to={value}
       >
@@ -40,9 +41,7 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
               <ul className="navbar-nav">
                 <BrowserRouter>
-                  <li className="nav-item">
-                    <span className=" nav-link">{li}</span>
-                  </li>
+                  <li className="nav-item">{li}</li>
                 </BrowserRouter>
                 {/* <li  className="nav-item">
                   <a className="nav-link active" aria-current="page" href="#">
