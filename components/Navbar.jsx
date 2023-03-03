@@ -5,17 +5,20 @@ const Navbar = () => {
   let listName = ["Home", "Features", "Pricing"];
   let location = ["/", "/Features", "/Pricing"];
   let li = location.map((value, index) => {
+    console.log(value);
     return (
-      <NavLink
-        style={({ isActive }) => {
-          return isActive ? { color: "red" } : {};
-        }}
-        className="nav-link"
-        key={index}
-        to={value}
-      >
-        {listName[index]}
-      </NavLink>
+      <li className="nav-item">
+        <NavLink
+          style={({ isActive }) => {
+            return isActive ? { color: "red" } : {};
+          }}
+          className="nav-link"
+          key={index}
+          to={value}
+        >
+          {listName[index]}
+        </NavLink>
+      </li>
     );
   });
   return (
@@ -40,9 +43,7 @@ const Navbar = () => {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
               <ul className="navbar-nav">
-                <BrowserRouter>
-                  <li className="nav-item">{li}</li>
-                </BrowserRouter>
+                <BrowserRouter>{li}</BrowserRouter>
                 {/* <li  className="nav-item">
                   <a className="nav-link active" aria-current="page" href="#">
                     Home
