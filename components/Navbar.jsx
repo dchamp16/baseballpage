@@ -5,7 +5,6 @@ const Navbar = () => {
   let listName = ["Home", "Features", "Pricing"];
   let location = ["/", "/Features", "/Pricing"];
   let li = location.map((value, index) => {
-    console.log(value);
     return (
       <li className="nav-item">
         <NavLink
