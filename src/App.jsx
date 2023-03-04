@@ -23,8 +23,8 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route exact path="/" element={<Content />} />
-              <Route exact path="/Features" element={<Features />} />
-              <Route exact path="/Pricing" element={<Pricing />} />
+              <Route exact path="/features" element={<Features />} />
+              <Route exact path="/pricing" element={<Pricing />} />
               <Route exact path="*" element={<h1>404 Error</h1>} />
             </Routes>
           </BrowserRouter>
